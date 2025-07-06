@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>task App</title>
+</head>
+<body>
+<h1>Minhas Tarefas</h1>
+<label for="task-input">
+    Nova Tarefa:
+    <input id="task-input" type="text" placeholder="Nova tarefa"/>
+</label>
+<button onclick="addTask()">Adicionar</button>
+<ul id="task-list"></ul>
+
+<script>
+    let tasks = [];
+
+    function addTask() {
+        const input = document.getElementById('task-input');
+        const task = input.value.trim();
+        if (task) {
+            tasks.push(task);
+            input.value = '';
+            render();
+        }
+    }
+
+    function render() {
+        const list = document.getElementById('task-list');
+        list.innerHTML = '';
+        tasks.forEach((task, index) => {
+            const li = document.createElement('li');
+            li.textContent = task;
+            li.onclick = () => removeTask(index);
+            list.appendChild(li);
+        });
+    }
+
+    function removeTask(index) {
+        tasks.splice(index, 1);
+        render();
+    }
+</script>
+</body>
+</html>
