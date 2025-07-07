@@ -4,7 +4,7 @@ Este repositório contém dois projetos didáticos simples que implementam o pad
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 mvc-tasks-example/
@@ -65,7 +65,7 @@ mvn exec:java
 
 ---
 
-## 🎓 Objetivos Educacionais
+## Objetivos Educacionais
 
 - Entender a aplicação do padrão MVC em diferentes linguagens.
 - Comparar arquitetura modular (MVC) com código acoplado.
@@ -73,13 +73,13 @@ mvn exec:java
 
 ---
 
-## 👨‍🏫 Autoria / Créditos
+## Autoria / Créditos
 
 - Lucas Martins
 - Projeto educacional para a disciplina de Arquitetura de Software
 
 ---
 
-## 📄 Licença
+## Licença
 
 Uso educacional. Reutilize e adapte conforme necessário.
